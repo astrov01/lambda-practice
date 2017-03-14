@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace lamda_practice.Data
 {
-    public class DatabaseContextInitializer<T> : DropCreateDatabaseIfModelChanges<DatabaseContext>
+    public class DatabaseContextInitializer<T> : DropCreateDatabaseAlways<DatabaseContext>
     {
 
         protected override void Seed(DatabaseContext context)
